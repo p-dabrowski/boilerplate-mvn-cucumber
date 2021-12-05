@@ -12,11 +12,10 @@ public class TestBankomat {
 
         bankomat.wplataPieniedzy(kwota);
         assertTrue( bankomat.pobierzSaldo() == 500, "Saldo różne od: " + kwota);
-
     }
 
     @Test
-    public void testWyplaty() {
+    public void testWyplaty() throws Exception {
         int kwota = 500;
         int kwotaWyplaty = 200;
 

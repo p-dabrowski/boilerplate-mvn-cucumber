@@ -8,10 +8,11 @@ public class Bankomat {
         }
     }
 
-    public void wyplataPieniedzy(int wyplata) {
+    public void wyplataPieniedzy(int wyplata) throws Exception {
         if (wyplata <= saldo) { saldo -= wyplata; }
         else {
             System.out.println("Zbyt mało środków na koncie");
+            throw new Exception("Zbyt malo srodkow");
         }
     }
 
